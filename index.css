@@ -93,6 +93,9 @@ button {
 #winner.sucess {
     display: block;
     color: #FFB431;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width:440px) {
@@ -101,6 +104,13 @@ button {
         width: 100dvw;
         overflow-y: none;
     }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
    #first-section {
         width: 100%;
@@ -108,7 +118,7 @@ button {
 
    #first-section h1 {
         width: 50%;
-        margin-left: 80px;
+        margin-left: 90px;
         font-size: 28px;
         line-height: 60px;
    }
@@ -122,5 +132,6 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 5px;
    }
 }
