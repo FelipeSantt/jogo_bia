@@ -1,14 +1,13 @@
-let numeroRandomico = (Math.floor(Math.random() * 100) + 1);
+let numeroRandomico = Math.floor(Math.random() * 100) + 1;
 let palpites = [];
 
 formulario.onsubmit = () => {
     event.preventDefault();
 
-    if(palpites.length != 10 ) {
-        
-        if(palpite.value === numeroRandomico) {
-            reset.classList.add('reset');
-            img_bia.src = "img/.bia_feliz.png";
+    if(palpites.length < 10 ) {
+        if(palpite.value == numeroRandomico) {
+            again.classList.add('reset');
+            img_bia.src = "img/bia_feliz.png";
             return;
         }
     
@@ -17,15 +16,23 @@ formulario.onsubmit = () => {
             formulario.reset();
             return;
         }
+
+        if(palpite.value < numeroRandomico) {
+            alert('É maior')
+        }else{
+            alert('É menor')
+        }
     
-        palpite.push(palpite.value);
+        palpites.push(palpite.value);
         palpitesText.innerHTML = palpites.join(' - ');
+        formulario.reset();
+
     }else {
-        reset.classList.add('reset');
+        again.classList.add('reset');
         img_bia.src = "img/.bia_triste.png";
     }
 }
 
-reset.onclick = () => {
-
+again.onclick = () => {
+    window.location.reload();
 }

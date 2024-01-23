@@ -39,7 +39,7 @@ body {
     color: #FFB431;
 }
 
-#number-value {
+#palpite {
     width: 50px;
     height: 50px;
     align-items: center;
@@ -52,14 +52,15 @@ body {
 }
 
 button {
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
     margin-top: 20px;
     border-radius: 5px;
     border: none;
     background-color: #DE5540;
     color: white;
     cursor: pointer;
+    font-size: 15px;
 }
 
 #results {
@@ -67,6 +68,15 @@ button {
     font-size: 20px;
 }
 
-#reset {
+#again {
+    display: none;
+}
+
+#reset.reset {
     display: block;
+}
+
+#palpitesText {
+    font-size: 30px;
+    color: #DE5540;
 }
