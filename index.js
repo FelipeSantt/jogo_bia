@@ -7,6 +7,8 @@ formulario.onsubmit = () => {
     if(palpites.length < 10 ) {
         if(palpite.value == numeroRandomico) {
             again.classList.add('reset');
+            winner.classList.add('sucess');
+            palpite.remove();
             img_bia.src = "img/bia_feliz.png";
             return;
         }

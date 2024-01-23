@@ -11,6 +11,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #aeecf6;
+    padding: 20px;
 }
 
 #main {
@@ -21,7 +23,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: solid 2px #FFB431;
     border-radius: 5px;
 }
 
@@ -46,7 +47,7 @@ body {
     text-align: center;
     outline: none;
     border-radius: 5px;
-    border-color: #DE5540;
+    border-color: #FFB431;
     font-size: 23px;
     padding: 1px;
 }
@@ -64,8 +65,12 @@ button {
 }
 
 #results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #again {
@@ -79,4 +84,43 @@ button {
 #palpitesText {
     font-size: 30px;
     color: #DE5540;
+}
+
+#winner {
+    display: none;
+}
+
+#winner.sucess {
+    display: block;
+    color: #FFB431;
+}
+
+@media (max-width:440px) {
+
+    body {
+        width: 100dvw;
+        overflow-y: none;
+    }
+    
+   #first-section {
+        width: 100%;
+   }
+
+   #first-section h1 {
+        width: 50%;
+        margin-left: 80px;
+        font-size: 28px;
+        line-height: 60px;
+   }
+
+   #img_bia {
+        width: 50%;
+        margin-right: 54px;
+   }
+
+   #formulario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
 }
