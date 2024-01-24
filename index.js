@@ -4,7 +4,7 @@ let palpites = [];
 formulario.onsubmit = () => {
     event.preventDefault();
 
-    if(palpites.length < 10 ) {
+    if(palpites.length < 9 ) {
         if(palpite.value == numeroRandomico) {
             again.classList.add('reset');
             winner.classList.add('sucess');
@@ -31,7 +31,7 @@ formulario.onsubmit = () => {
 
     }else {
         again.classList.add('reset');
-        img_bia.src = "img/.bia_triste.png";
+        img_bia.src = "img/bia_triste.png";
     }
 }
 

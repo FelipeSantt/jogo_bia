@@ -138,4 +138,8 @@ button {
    #results {
        margin-left: 30px;
    }
+
+   #palpitesText {
+        font-size: 25px;
+   }
 }
