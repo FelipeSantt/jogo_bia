@@ -33,6 +33,7 @@ formulario.onsubmit = () => {
     }else {
         again.classList.add("reset");
         winner.classList.add("sucess");
+        palpite.remove();
         winner.innerHTML = `Ha Não !! O numero é: ${numeroRandomico}`;
         img_bia.src = "img/bia_triste.png";
     }
